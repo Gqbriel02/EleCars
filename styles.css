@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#contents, #aboutUsId {
+  flex: 1;
+}
+header {
+  height: 10%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 10%;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-top: auto;
+}
+nav {
+  height: 10%;
+  width: 100%;
+  background-color: #ccc;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+/* point 3 */
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f2f2f2;
+}
+nav a:hover {
+  color: #06e4d1;
+  background-color: #6f57ea;
+}
+header h1, header h3 {
+	text-align: center;
+	margin: 0;
+}
+#main-content {
+	width: 70%;
+    margin-right: 20%;
+}
+#contact-info{
+	position: absolute;
+    top: 0;
+	right: 0;
+    width: 30%;
+    padding-top: 200px;
+}
+#contact-info h3 {
+	text-align: center;
+}
+label {
+  font-size: 20px;
+}
+input[type="text"],
+input[type="email"] {
+  font-size: 20px;
+  padding: 12px; 
+  font-family: Comic Sans, sans-serif;
+}
+textarea {
+  font-size: 20px;
+  padding: 35px;
+  font-family: Comic Sans, sans-serif;
+}
+.txtfield {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+.btn {
+  font-size: 20px; 
+  padding: 8px 16px; 
+}
+.btn:hover {
+  color: #06e4d1;
+  background-color: #6f57ea;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-container img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+footer {
+  clear: both;
+  height: 10%;
+  width: 100%
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#map {
+	height: 60%;
+	width: 60%;
+}
+
+/* point 9 */
+@media print {
+  header,
+  footer,
+  #contact-info {
+    display: none !important;
+  }
+  
+ 
+  body {
+
+    font-size: 16px;
+    margin: 20mm;
+  }
+  img {
+    border: 1px solid #000;
+  }
+  p,
+  a {
+    color: #000;
+  }
+  #main-content {
+    page-break-after: avoid;
+  }
+}
+ h1, h2, h3, p, body, footer, nav {
+	 font-family: Comic Sans, sans-serif;
+ }
+
+
